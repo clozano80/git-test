@@ -1,0 +1,12 @@
+#Basicos
+git --version
+git config --global user.name "your name"
+git config --global user.email >your email>
+git config --list
+
+#Comandos
+git init
+git status
+git add . #to staging area
+git commit -m "message" #aceptamos cambios de lo que hay en stage (todo de golpe)
+git log --online
