@@ -3,10 +3,13 @@ version: '3.4'
 services:
   gittest:
     image: gittest
+    hostname: gittest
     build:
       context: .
       dockerfile: ./Dockerfile
     environment:
       NODE_ENV: production
+    volumes:
+      ./src:/usr/src/app/
     ports:
       - 3000:3000
