@@ -9,4 +9,7 @@ git init
 git status
 git add . #to staging area
 git commit -m "message" #aceptamos cambios de lo que hay en stage (todo de golpe)
-git log --online
+git log --oneline
+git checkout <nº commit> <file> #(recuperar un archivo de un commit anterior)
+git reset HEAD index.html       #descartar el checkout y volver al HEAD ultimo commit
+git checkout -- index.html
