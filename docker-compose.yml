@@ -10,6 +10,6 @@ services:
     environment:
       NODE_ENV: production
     volumes:
-      src:/usr/src/app/
+      - ./src:/usr/src/app/
     ports:
       - 3000:3000
