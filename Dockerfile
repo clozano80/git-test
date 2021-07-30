@@ -1,7 +1,8 @@
 FROM node:14-alpine
-ENV NODE_ENV=production
 WORKDIR /usr/src/app
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install --production --silent
+COPY package.json ./
+COPY package-lock.json ./
+COPY bs-config.json ./
+RUN npm install --silent
 EXPOSE 3000
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
