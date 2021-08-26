@@ -14,6 +14,12 @@ git checkout <nº commit> <file> #(recuperar un archivo de un commit anterior)
 git reset HEAD index.html       #descartar el checkout y volver al HEAD ultimo commit
 git checkout -- index.html
 
+git remote add origin <repository URL>
+– Add the remote online repository
+
+actualizar tras comit la rama en github remoto
+git push -u origin master
+
 
 ## NODE NPM ###
 
@@ -22,7 +28,8 @@ npm init
 instalamos un servidor para trabajar (en este caso lo marcamos solo para utilizar en desarrollo)
 npm install lite-server --save-dev
 
-el --save-dev hace que se guarden los cambios en el package.json
+el --save-dev hace que se guarden los cambios en el package.json para desarrollo
+-- save guarda como dependencia
 
 Cómo añadir scripts de ejecución a npm en un proyecto -> package.json
  "scripts": {
