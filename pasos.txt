@@ -22,6 +22,8 @@ npm init
 instalamos un servidor para trabajar (en este caso lo marcamos solo para utilizar en desarrollo)
 npm install lite-server --save-dev
 
+el --save-dev hace que se guarden los cambios en el package.json
+
 Cómo añadir scripts de ejecución a npm en un proyecto -> package.json
  "scripts": {
     "start": "npm run lite",
